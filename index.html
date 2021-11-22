@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap & custom css file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="Stylesheet" href="css/style.css">
+    <!-- Google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-navbar row">
+        <div class="col start-cont">
+            <span class="material-icons" id="Menu-icon">menu</span>
+            <a href="#">Estore</a>
+        </div>
+        <div class="col-6 search-box-cont">
+            <input type="text" name="search_items" id="Search-box" placeholder="Search your book here">
+        </div>
+        <div class="col end-cont">
+            <span class="material-icons" id="Search-icon">search</span>
+            <span class="material-icons" id="Cart">shopping_cart</span>
+            <button id="Login-btn">Login</button>
+        </div>
+    </div>
+
+    <section id="Banner-sec">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="web_imgs/banner-2.jpg" class="d-block w-100 carousel-imgs" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="web_imgs/banner-3.jpg" class="d-block w-100 carousel-imgs" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="Categories" class="add-sec bg-light">
+        <h2 class="mb-4">Top Categories</h2>
+        <div class="categories-cont row">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-6 mb-4">
+                <div class="card shadow bg-lpink">
+                    <a href="#">
+                        <div class="card-header">
+                            <img src="web_imgs/school.png" class="card-img-top" alt="school">
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">School & 10+2</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-6 mb-4">
+                <div class="card shadow bg-lblue">
+                    <a href="#">
+                        <div class="card-header">
+                            <img src="web_imgs/graduation.png" class="card-img-top" alt="school">
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">School & 10+2</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-6 mb-4">
+                <div class="card shadow bg-lpink">
+                    <a href="#">
+                        <div class="card-header">
+                            <img src="web_imgs/school.png" class="card-img-top" alt="school">
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">School & 10+2</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-6 mb-4">
+                <div class="card shadow bg-lblue">
+                    <a href="#">
+                        <div class="card-header">
+                            <img src="web_imgs/graduation.png" class="card-img-top" alt="school">
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">School & 10+2</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-6 mb-4">
+                <div class="card shadow bg-lpink">
+                    <a href="#">
+                        <div class="card-header">
+                            <img src="web_imgs/school.png" class="card-img-top" alt="school">
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">School & 10+2</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-6 mb-4">
+                <div class="card shadow bg-lblue">
+                    <a href="#">
+                        <div class="card-header">
+                            <img src="web_imgs/graduation.png" class="card-img-top" alt="school">
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">School & 10+2</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-6 mb-4">
+                <div class="card shadow bg-lpink">
+                    <a href="#">
+                        <div class="card-header">
+                            <img src="web_imgs/school.png" class="card-img-top" alt="school">
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">School & 10+2</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-6 mb-4">
+                <div class="card shadow bg-lblue">
+                    <a href="#">
+                        <div class="card-header">
+                            <img src="web_imgs/graduation.png" class="card-img-top" alt="school">
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">School & 10+2</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="add-sec bg-lorange">
+        <h2 class="mb-4">Popular Books</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="books-cont shadow">
+                    <div class="book-items">
+                        <div class="lt-cont">
+                            <img src="web_imgs/cover-1.jpg" alt="Book 1">
+                        </div>
+                        <div class="rt-cont">
+                            <div class="book_details">
+                                <p id="Book_name">The White Line</p>
+                                <p id="Pub_name">Saraswati Publishers Ltd</p>
+                                <p id="uty_name">Kailash Univarsity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pAb_cont">
+                        <p class="book_price_cont">
+                            <span class="material-icons">currency_rupee</span>
+                            <span id="Book_price">199</span>
+                        </p>
+                        <button id="Buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="books-cont shadow">
+                    <div class="book-items">
+                        <div class="lt-cont">
+                            <img src="web_imgs/cover-1.jpg" alt="Book 1">
+                        </div>
+                        <div class="rt-cont">
+                            <div class="book_details">
+                                <p id="Book_name">The White Line</p>
+                                <p id="Pub_name">Saraswati Publishers Ltd</p>
+                                <p id="uty_name">Kailash Univarsity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pAb_cont">
+                        <p class="book_price_cont">
+                            <span class="material-icons">currency_rupee</span>
+                            <span id="Book_price">199</span>
+                        </p>
+                        <button id="Buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="books-cont shadow">
+                    <div class="book-items">
+                        <div class="lt-cont">
+                            <img src="web_imgs/cover-1.jpg" alt="Book 1">
+                        </div>
+                        <div class="rt-cont">
+                            <div class="book_details">
+                                <p id="Book_name">The White Line</p>
+                                <p id="Pub_name">Saraswati Publishers Ltd</p>
+                                <p id="uty_name">Kailash Univarsity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pAb_cont">
+                        <p class="book_price_cont">
+                            <span class="material-icons">currency_rupee</span>
+                            <span id="Book_price">199</span>
+                        </p>
+                        <button id="Buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="books-cont shadow">
+                    <div class="book-items">
+                        <div class="lt-cont">
+                            <img src="web_imgs/cover-1.jpg" alt="Book 1">
+                        </div>
+                        <div class="rt-cont">
+                            <div class="book_details">
+                                <p id="Book_name">The White Line</p>
+                                <p id="Pub_name">Saraswati Publishers Ltd</p>
+                                <p id="uty_name">Kailash Univarsity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pAb_cont">
+                        <p class="book_price_cont">
+                            <span class="material-icons">currency_rupee</span>
+                            <span id="Book_price">199</span>
+                        </p>
+                        <button id="Buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="books-cont shadow">
+                    <div class="book-items">
+                        <div class="lt-cont">
+                            <img src="web_imgs/cover-1.jpg" alt="Book 1">
+                        </div>
+                        <div class="rt-cont">
+                            <div class="book_details">
+                                <p id="Book_name">The White Line</p>
+                                <p id="Pub_name">Saraswati Publishers Ltd</p>
+                                <p id="uty_name">Kailash Univarsity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pAb_cont">
+                        <p class="book_price_cont">
+                            <span class="material-icons">currency_rupee</span>
+                            <span id="Book_price">199</span>
+                        </p>
+                        <button id="Buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="books-cont shadow">
+                    <div class="book-items">
+                        <div class="lt-cont">
+                            <img src="web_imgs/cover-1.jpg" alt="Book 1">
+                        </div>
+                        <div class="rt-cont">
+                            <div class="book_details">
+                                <p id="Book_name">The White Line</p>
+                                <p id="Pub_name">Saraswati Publishers Ltd</p>
+                                <p id="uty_name">Kailash Univarsity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pAb_cont">
+                        <p class="book_price_cont">
+                            <span class="material-icons">currency_rupee</span>
+                            <span id="Book_price">199</span>
+                        </p>
+                        <button id="Buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

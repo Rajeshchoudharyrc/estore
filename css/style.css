@@ -1,0 +1,284 @@
+/* * {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+} */
+
+.add-sec {
+    padding: 5%;
+}
+
+.bg-lpink {
+    background: #ffd7de;
+}
+.bg-lblue {
+    background: #d7e5ff;
+}
+
+.bg-lorange {
+    background: #ffecc5;
+}
+
+/* .bg-lvoilet {
+    background: #a880ff;
+} */
+
+.top-navbar {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    color: #fff;
+    background-color: #6828f0;
+    padding: 0 5%;
+    margin: 0;
+    height: 60px;
+}
+
+.col {
+    padding: 0;
+}
+
+.start-cont {
+    display: flex;
+    align-items: center;
+}
+
+#Menu-icon {
+    font-size: 1.4rem;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.start-cont a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.search-box-cont {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+}
+
+#Search-box {
+    width: 90%;
+    outline: none;
+    padding: 8px 10PX;
+    border-radius: 2px;
+    border: none;
+}
+
+.end-cont {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.end-cont span {
+    margin-left: 12px;
+}
+
+#Login-btn {
+    background-color: #fff;
+    color: #6828f0;
+    border: none;
+    padding: 5px 20px;
+    margin-left: 25px;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+#Cart {
+    cursor: pointer;
+}
+
+/*-----------[Categories Section]-------------*/
+
+/* .categories-items {
+    text-align: center;
+} */
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.card-img-top {
+    width: 50%;
+}
+.categories-cont .card {
+    margin-top: 0.5rem;
+    transition: 0.3s;
+}
+
+.categories-cont .card:hover {
+    margin-top: 0;
+}
+
+.categories-cont .card,
+.categories-cont .card-header {
+    border: none;
+}
+.categories-cont .card-body {
+    border: none;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* .categories-cont .card:hover {
+    box-shadow: 0px 9px 17px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 9px 17px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 9px 17px 0px rgba(0,0,0,0.75);
+} */
+
+.categories-cont .card a {
+    text-decoration: none;
+    color: #333;
+}
+
+/*------[ popular book ]--------*/
+
+.books-cont {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+.books-cont:hover {
+    margin-top: 0;
+}
+
+.book-items {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.book_details {
+    height: 75%;
+}
+.lt-cont {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.lt-cont img {
+    width: 100%;
+}
+
+.rt-cont {
+    width: 100%;
+}
+
+.rt-cont p{
+    margin: 0;
+    color: rgb(93, 93, 93);
+}
+
+#Book_name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+}
+#Pub_name {
+    font-size: 0.85rem;
+}
+
+#uty_name {
+    color: #3482ff;
+    font-size: 0.85rem;
+}
+
+.pAb_cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.book_price_cont {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.book_price_cont span {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+}
+
+button#Buy-btn {
+    border: navajowhite;
+    font-size: 1rem;
+    background: #FF9F00;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* #Book_price {
+    
+} */
+
+@media  (max-width: 799px) {
+    .top-navbar {
+        height: 45px;
+    }
+
+    .start-cont a {
+        font-size: 1.4rem;
+    }
+
+    .search-box-cont {
+        display: none;
+    }
+
+    .end-cont span {
+        font-size: 1.4rem;
+    }
+
+    #Login-btn {
+        background: transparent;
+        color: #fff;
+        padding: 0;
+        font-weight: normal;
+        margin-left: 12px;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 0.25rem;
+    }
+
+    /* .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    } */
+}
+
+@media (max-width: 399px) {
+    .card-body {
+        padding: 0.5rem 1rem;
+    }
+    
+    .card-text {
+        font-size: 0.75rem;
+    }
+}
+
+@media (min-width: 799px) {
+    #Menu-icon {
+        display: none;
+    }
+
+    #Search-icon {
+        display: none;
+    }
+}
