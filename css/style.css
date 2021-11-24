@@ -224,14 +224,33 @@ button#Buy-btn {
     cursor: pointer;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0 0 0 / 60%);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+
+.overlay-enable.overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
 /* #Book_price {
     
 } */
 
 @media  (max-width: 799px) {
-    .top-navbar {
+    /* .top-navbar {
         height: 45px;
-    }
+    } */
 
     .start-cont a {
         font-size: 1.4rem;
@@ -257,19 +276,139 @@ button#Buy-btn {
         margin-bottom: 0.25rem;
     }
 
+    .categories-cont .card {
+        margin-top: 0;
+    }
+
+    .books-cont {
+        margin-top: 0;
+    }
+
     /* .carousel-control-prev,
     .carousel-control-next {
         display: none;
     } */
+
+
+    /*------[ Side navbar ]------*/
+    .sidenav {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 75%;
+        background-color: #fff;
+        transform: translate(-100%);
+        -moz-transform: translate(-100%);
+        transition:  0.3s;
+        -moz-transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidenav-open.sidenav {
+        transform: translate(0);
+        -moz-transform: translate(0);
+    }
+
+    .sidenav .top-cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #6828f0;
+        color: #fff;
+        padding: 8px 0;
+    }
+
+    .sidenav .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-left: 1.4rem;
+    }
+
+    .sidenav .close-arrow {
+        display: flex;
+        align-items: center;
+    }
+
+    .sidenav .close-arrow span {
+        font-size: 1.35rem;
+    }
+
+    .all-links-cont {
+        overflow-y: auto;
+    }
+
+    .all-links-cont ul {
+        list-style-type: none;
+        padding-left: 0;
+        padding-top: 5px;
+    }
+
+    .all-links-cont ul li a {
+        color: #353535;
+        text-decoration: none;
+        display: block;
+        line-height: 30px;
+        font-weight: 600;
+        padding-left: 1.4rem;
+    }
+    
+    /*-------[ Search container for mobile ]---------*/
+    .search-container {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color: #fff;
+        z-index: 1;
+        padding: 0 5px;
+        transition: 0.3s;
+        -moz-transition: 0.3s;
+        display: none;
+    }
+
+    .search-header {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .m-search-box {
+        flex-grow: 1;
+    }
+
+    .exit-search-cont {
+        display: flex;
+        align-self: center;
+        padding: 0 8px 0 4px;
+    }
+
+    input#M-search-box {
+        width: 100%;
+        padding: 5px;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+    }
 }
 
 @media (max-width: 399px) {
     .card-body {
         padding: 0.5rem 1rem;
     }
-    
+
     .card-text {
         font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 399px) {
+    .card-text {
+        font-size: 0.65rem;
     }
 }
 
@@ -279,6 +418,10 @@ button#Buy-btn {
     }
 
     #Search-icon {
+        display: none;
+    }
+
+    .sidenav {
         display: none;
     }
 }
