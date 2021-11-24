@@ -4,7 +4,7 @@
 } */
 
 .add-sec {
-    padding: 5%;
+    padding: 6% 5%;
 }
 
 .bg-lpink {
@@ -243,6 +243,34 @@ button#Buy-btn {
     opacity: 1;
 }
 
+/*------[ Reg Users and Upload Books ]--------*/
+#Count-Users_Books {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#Count-Users_Books div {
+    text-align: center;
+}
+
+.num-box {
+    width: 250px;
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    background: #ffae00;
+    color: #fff;
+    padding: 2px 0;
+    border-radius: 4px;
+}
+
+p.txt-label {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
 /* #Book_price {
     
 } */
@@ -251,6 +279,10 @@ button#Buy-btn {
     /* .top-navbar {
         height: 45px;
     } */
+
+    .add-sec {
+        padding: 10% 5%;
+    }
 
     .start-cont a {
         font-size: 1.4rem;
@@ -396,6 +428,20 @@ button#Buy-btn {
     }
 }
 
+@media (max-width: 659px) {
+    /*------[ Reg Users and Upload Books ]--------*/
+    #Count-Users_Books {
+        display: block;
+    }
+
+    #Count-Users_Books div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+}
 @media (max-width: 399px) {
     .card-body {
         padding: 0.5rem 1rem;
@@ -404,11 +450,18 @@ button#Buy-btn {
     .card-text {
         font-size: 0.75rem;
     }
-}
 
-@media (max-width: 399px) {
     .card-text {
         font-size: 0.65rem;
+    }
+
+    p.txt-label {
+        font-size: 1.05rem;
+    }
+
+    .num-box {
+        width: 80%;
+        font-size: 1.4rem;
     }
 }
 
