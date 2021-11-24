@@ -424,4 +424,9 @@ button#Buy-btn {
     .sidenav {
         display: none;
     }
+    
+    /*-------[ Search container for mobile ]---------*/
+    .search-container {
+        display: none;
+    }
 }
