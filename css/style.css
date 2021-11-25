@@ -7,7 +7,7 @@
     padding: 6% 5%;
 }
 
-.bg-lpink {
+.bg-lred {
     background: #ffd7de;
 }
 .bg-lblue {
@@ -16,6 +16,26 @@
 
 .bg-lorange {
     background: #ffecc5;
+}
+
+.bg-lgreen {
+    background: #d0f7ef;
+}
+
+.bg-lyellow {
+    background: #f6f6dd
+}
+
+.bg-lpink {
+    background: #fcd7ff;
+}
+
+.bg-lyellogreen {
+    background: #e3f7d0;
+}
+
+.bg-lviolet {
+    background: #e3d0f7;
 }
 
 /* .bg-lvoilet {
