@@ -156,47 +156,45 @@
     margin-top: 0;
 }
 
-.book-items {
+.card-top {
     display: flex;
     margin-bottom: 10px;
 }
 
 .book_details {
-    height: 75%;
+    flex-grow: 1;
 }
-.lt-cont {
-    width: 30%;
+
+.book_details p {
+    margin-bottom: 0;
+}
+
+.card-img-cont {
+    width: 25%;
     margin-right: 10px;
 }
 
-.lt-cont img {
+.card-img-cont img {
     width: 100%;
 }
 
-.rt-cont {
-    width: 100%;
-}
 
-.rt-cont p{
-    margin: 0;
-    color: rgb(93, 93, 93);
-}
 
-#Book_name {
+.Book_name {
     font-size: 1.2rem;
     font-weight: 600;
     color: #000;
 }
-#Pub_name {
+.Pub_name {
     font-size: 0.85rem;
 }
 
-#uty_name {
+.unv_name {
     color: #3482ff;
     font-size: 0.85rem;
 }
 
-.pAb_cont {
+.card-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -270,6 +268,32 @@ p.txt-label {
     font-size: 1.3rem;
     font-weight: bold;
 }
+
+/*--------[ Latest Book Section ]-----------*/
+/* .latest-books-cont {
+    width: auto;
+    overflow-x: auto;
+} */
+
+.ltst-book-cont {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+}
+
+.ltst-img {
+    width: 25%;
+    margin-right: 10px;
+}
+
+.ltst-img img {
+    width: 100%;
+}
+
+/* .latest-book-sec  .owl-stage-outer {
+    padding: 5px 0 20px;
+} */
 
 /* #Book_price {
     
@@ -350,7 +374,7 @@ p.txt-label {
         justify-content: space-between;
         background: #6828f0;
         color: #fff;
-        padding: 8px 0;
+        padding: 11px 0;
     }
 
     .sidenav .logo {

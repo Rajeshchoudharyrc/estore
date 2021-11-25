@@ -20,5 +20,27 @@ $(document).ready(function() {
     $(".exit-search-cont").on("click", function() {
         $(".search-container").hide();
     });
+
+
+    //------------- owl carousel --------------
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 25,
+        nav: false,
+        // dots: false,
+        // stagePadding: 20,
+        autoplay: true,
+        responsive: {
+            0:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
     
 })
