@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-bluevoilet {
-    background: #8A2BE2;
+    background: #673DE6;
     color: #fff;
 }
 
@@ -60,7 +60,6 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: space-between; */
     color: #ffffff;
-    background-color: #8a2be2;
     padding: 0 5%;
     margin: 0;
     height: 60px;
@@ -116,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #Login-btn {
     background-color: #fff;
-    color: #8A2BE2;
+    color: #673DE6;
     border: none;
     padding: 5px 20px;
     margin-left: 25px;
@@ -248,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
 button#Buy-btn {
     border: none;
     font-size: 1rem;
-    background: #8A2BE2;
+    background: #673DE6;
     color: #fff;
     padding: 6px 12px;
     border-radius: 4px;
