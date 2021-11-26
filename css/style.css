@@ -7,6 +7,10 @@
     padding: 6% 5%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: #2F1C6A;
+}
+
 .bg-lred {
     background: #ffd7de;
 }
@@ -14,12 +18,17 @@
     background: #d7e5ff;
 }
 
-.bg-lorange {
-    background: #ffecc5;
+.bg-lbluevoilet {
+    background: #F4F5FF;
+}
+
+.bg-bluevoilet {
+    background: #8A2BE2;
+    color: #fff;
 }
 
 .bg-lgreen {
-    background: #d0f7ef;
+    background: #eefaff;
 }
 
 .bg-lyellow {
@@ -30,12 +39,16 @@
     background: #fcd7ff;
 }
 
-.bg-lyellogreen {
+.bg-lyellowgreen {
     background: #e3f7d0;
 }
 
 .bg-lviolet {
     background: #e3d0f7;
+}
+
+.bg-dark {
+    color: #4B4453;
 }
 
 /* .bg-lvoilet {
@@ -46,8 +59,8 @@
     /* display: flex;
     align-items: center;
     justify-content: space-between; */
-    color: #fff;
-    background-color: #6828f0;
+    color: #ffffff;
+    background-color: #8a2be2;
     padding: 0 5%;
     margin: 0;
     height: 60px;
@@ -103,7 +116,7 @@
 
 #Login-btn {
     background-color: #fff;
-    color: #6828f0;
+    color: #8A2BE2;
     border: none;
     padding: 5px 20px;
     margin-left: 25px;
@@ -210,7 +223,7 @@
 }
 
 .unv_name {
-    color: #3482ff;
+    color: #3484AB;
     font-size: 0.85rem;
 }
 
@@ -233,9 +246,9 @@
 }
 
 button#Buy-btn {
-    border: navajowhite;
+    border: none;
     font-size: 1rem;
-    background: #FF9F00;
+    background: #8A2BE2;
     color: #fff;
     padding: 6px 12px;
     border-radius: 4px;
@@ -278,7 +291,7 @@ button#Buy-btn {
     font-size: 1.7rem;
     font-weight: 600;
     letter-spacing: 5px;
-    background: #ffae00;
+    background: #008BC8;
     color: #fff;
     padding: 2px 0;
     border-radius: 4px;
@@ -287,6 +300,7 @@ button#Buy-btn {
 p.txt-label {
     font-size: 1.3rem;
     font-weight: bold;
+    color: #2F1C6A;
 }
 
 /*--------[ Latest Book Section ]-----------*/
@@ -298,7 +312,6 @@ p.txt-label {
 .ltst-book-cont {
     background-color: #fff;
     padding: 10px;
-    border: 1px solid #ededed;
     border-radius: 4px;
 }
 
@@ -311,13 +324,48 @@ p.txt-label {
     width: 100%;
 }
 
-/* .latest-book-sec  .owl-stage-outer {
-    padding: 5px 0 20px;
-} */
+.latest-book-sec  .owl-stage-outer {
+    padding: 5px 0 10px;
+}
 
-/* #Book_price {
-    
-} */
+/*--------[ Footer Section ]-----------*/
+.footer-bottom-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright-cont {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 1rem;
+    color: #9f9f9f;
+}
+
+span.copyright-icon {
+    padding-right: 4px;
+    font-size: 1.15rem;
+}
+
+.social-icons ul {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons ul li a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.social-icons ul li img {
+    width: 22px;
+}
 
 @media  (max-width: 799px) {
     /* .top-navbar {
@@ -392,8 +440,6 @@ p.txt-label {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: #6828f0;
-        color: #fff;
         padding: 11px 0;
     }
 
@@ -472,6 +518,11 @@ p.txt-label {
     }
 }
 
+/* @media (max-width: 768px) {
+    
+} */
+
+
 @media (max-width: 659px) {
     /*------[ Reg Users and Upload Books ]--------*/
     #Count-Users_Books {
@@ -485,6 +536,27 @@ p.txt-label {
         justify-content: space-between;
         margin-bottom: 30px;
     }
+
+    .footer-bottom-cont {
+       display: block;
+       text-align: center;
+    }
+    
+    .copyright-cont {
+        justify-content: center;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    /* .social-icons ul {
+        justify-content: center;
+    } */
+
 }
 @media (max-width: 399px) {
     .card-body {
@@ -506,6 +578,14 @@ p.txt-label {
     .num-box {
         width: 80%;
         font-size: 1.4rem;
+    }
+
+    .social-icons ul {
+        width: 60%;
+    }
+
+    .copyright-cont span{
+        font-size: 0.7rem;
     }
 }
 
