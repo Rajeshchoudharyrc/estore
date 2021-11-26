@@ -22,7 +22,7 @@ $(document).ready(function() {
     });
 
 
-    //------------- owl carousel --------------
+    //------------- [owl carousel] --------------
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 25,
@@ -42,5 +42,42 @@ $(document).ready(function() {
             }
         }
     });
+
+
+    //------------- [ Number Counter ] --------------
+    let counter_fired = 0;
+    $(window).scroll(function() {
+            let Scroll_top = $(window).scrollTop();
+            let Scroll_pos = 2000;
+
+            if(Scroll_top > Scroll_pos && counter_fired == 0) {
+                //----- Number Animation -------
+                $({ Counter: 0 }).animate({
+                    Counter: $('#Registered_users').text()
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function() {
+                    $('#Registered_users').text(Math.ceil(this.Counter));
+                    }
+                });
+
+                $({ Counter: 0 }).animate({
+                    Counter: $('#Uploaded_books').text()
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function() {
+                    $('#Uploaded_books').text(Math.ceil(this.Counter));
+                    }
+                });
+                counter_fired = 1;
+            }
+    });
+
+    //------------- [ Copyright ] --------------
+    let  Copyright_year = new Date().getFullYear();
+    $("#Copyright_year").text(Copyright_year);
+    
     
 })
