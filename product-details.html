@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap & custom css file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="Stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.theme.green.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-navbar bg-bluevoilet row">
+        <div class="col start-cont">
+            <span class="material-icons" id="Menu-icon">menu</span>
+            <a href="#">Estore</a>
+        </div>
+        <div class="col-6 search-box-cont">
+            <input type="text" name="search_items" id="Search-box" placeholder="Search your book here">
+        </div>
+        <div class="col end-cont">
+            <span class="material-icons" id="Search-icon">search</span>
+            <span class="material-icons" id="Cart">shopping_cart</span>
+            <button id="Login-btn">Login</button>
+        </div>
+    </div>
+    <!----------[ Search Area ]----------->
+    <div class="search-container" id="Search-Cont">
+        <div class="search-header">
+            <div class="exit-search-cont">
+                <span class="material-icons">arrow_back</span>
+            </div>
+            <div class="m-search-box">
+                <input type="search" name="search" id="M-search-box" placeholder="Search for Book, Brand and More">
+            </div>
+        </div>
+        <div class="search-res-cont">
+            Result area
+        </div>
+    </div>
+    <!----------[ Sidenav ]------------>
+    <div class="sidenav">
+        <div class="top-cont bg-bluevoilet">
+            <div class="logo">Estore</div>
+            <div class="close-arrow">
+                <span class="material-icons">arrow_back_ios</span>
+            </div>
+        </div>
+        <div class="all-links-cont">
+            <ul>
+                <li><a href="https://www.google.com" target="_blank">Home</a></li>
+                <li><a href="#">All Categories</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <!----------[ overlay ]----------->
+    <div class="overlay"></div>
+    <!----------[ Top Banner section ]----------->
+    <section class="lt-p bg-light">
+        <div class="product-cont p-2 py-4 bg-white row">
+            <div class="col-lg-4 col-md-5 col-sm-6">
+                <div class="product-image-cont mb-2">
+                    <div id="product-img" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="web_imgs/cover-1.jpg" alt="book cover">
+                        </div>
+                        <div class="item">
+                            <img src="web_imgs/cover-1.jpg" alt="book cover">
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_buy-btn-cont">
+                    <button class="Btn btn-c">ADD TO CART</button>
+                    <button class="Btn">BUY NOW</button>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-7 col-sm-6 product_details">
+                <p class="Book_name">Rich Dad Poor Dad  (English, Paperback, Kiyosaki Robert T) </p>
+                <p>Author : <span class="Author_name">Kiyosaki Robert T.</span></p>
+
+                <p class="product_price-cont">
+                    <span class="material-icons">currency_rupee</span>
+                    <span id="Book_price">299</span>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!----[ Footer section ]---->
+    <!-- <section id="Footer" class="add-sec bg-dark">
+        <div></div>
+        <div class="footer-bottom-cont">
+            <div class="copyright-cont">
+                <span class="material-icons copyright-icon">copyright</span>
+                <span id="Copyright_year" class="pe-1">2021</span>
+                <span> Company Name. All Rights Reserved.</span>
+            </div>
+            <div class="social-icons">
+                <ul>
+                    <li><a href="#"><img src="web_imgs/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="web_imgs/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="web_imgs/twitter.png" alt="Twitter"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous">
+    </script>
+    <!-- jQuery cdn file -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <!-- Owl js file -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Add custom js file -->
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>

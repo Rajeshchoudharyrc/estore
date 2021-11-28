@@ -23,7 +23,7 @@ $(document).ready(function() {
 
 
     //------------- [owl carousel] --------------
-    $('.owl-carousel').owlCarousel({
+    $('#Ltst-books').owlCarousel({
         loop: true,
         margin: 25,
         nav: false,
@@ -39,6 +39,28 @@ $(document).ready(function() {
             },
             1000:{
                 items:3
+            }
+        }
+    });
+
+
+    //------------- [owl carousel] --------------
+    $('#product-img').owlCarousel({
+        loop: true,
+        margin: 25,
+        nav: false,
+        // dots: false,
+        // stagePadding: 20,
+        // autoplay: true,
+        responsive: {
+            0:{
+                items:1
+            },
+            768:{
+                items:1
+            },
+            1000:{
+                items:1
             }
         }
     });
@@ -80,4 +102,4 @@ $(document).ready(function() {
     $("#Copyright_year").text(Copyright_year);
     
     
-})
+});

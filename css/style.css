@@ -1,5 +1,6 @@
 /* * {
     font-family: 'Montserrat', sans-serif;
+    
     font-weight: 700;
 } */
 
@@ -27,6 +28,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
+.bg-blue {
+    background-color: #008BC8;
+}
+
 .bg-lgreen {
     background: #eefaff;
 }
@@ -49,6 +54,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-dark {
     color: #4B4453;
+}
+
+.lt-p {
+    padding: 1% 5%;
+}
+
+.Btn {
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #673DE6;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-c {
+    background-color: #008BC8;
 }
 
 /* .bg-lvoilet {
@@ -200,7 +222,6 @@ h1, h2, h3, h4, h5, h6 {
 .book_details p {
     margin-bottom: 0;
 }
-
 .card-img-cont {
     width: 25%;
     margin-right: 10px;
@@ -217,6 +238,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     color: #000;
 }
+
+.Author_name {
+    font-size: 1rem;
+    color: #008BC8;
+    font-weight: 500;
+}
+
 .Pub_name {
     font-size: 0.85rem;
 }
@@ -326,6 +354,57 @@ p.txt-label {
 .latest-book-sec  .owl-stage-outer {
     padding: 5px 0 10px;
 }
+
+/*--------[ product details ]-----------*/
+
+#product-img {
+    width: 60%;
+}
+
+.product-image-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart_buy-btn-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart_buy-btn-cont button {
+    width: 48%;
+    height: 50px;
+    font-weight: 600;
+}
+
+.product_price-cont {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10px;
+}
+
+.product_price-cont span {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.product_details p {
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*--------[ Footer Section ]-----------*/
 .footer-bottom-cont {
@@ -484,7 +563,7 @@ span.copyright-icon {
         left: 0;
         top: 0;
         background-color: #fff;
-        z-index: 1;
+        z-index: 99;
         padding: 0 5px;
         transition: 0.3s;
         -moz-transition: 0.3s;
@@ -557,6 +636,29 @@ span.copyright-icon {
     } */
 
 }
+
+@media (max-width: 576px) {
+    .product-cont {
+        margin-bottom: 50px;
+    }
+    .cart_buy-btn-cont {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .cart_buy-btn-cont button {
+        width: 50%;
+        border-radius: 0;
+    }
+
+    .product_details p {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 399px) {
     .card-body {
         padding: 0.5rem 1rem;
